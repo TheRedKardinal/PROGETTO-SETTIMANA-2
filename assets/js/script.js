@@ -143,6 +143,7 @@ function piazzaStelline(n) {
 }
 
 console.log(piazzaStelline(6));
+
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */
