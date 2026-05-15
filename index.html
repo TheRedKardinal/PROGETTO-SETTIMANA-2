@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Homepage — Week Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -15,20 +16,20 @@
         <nav id="mainMenu">
             <ul>
                 <li>
-                    <a id="logo" href="javascript:void()" target="_blank"></a>
+                    <a id="logo" href="javascript:void(0)" target="_blank"></a>
                 </li>
                 <li>
                     <form id="searchBar" action="/search" method="get">
-                        <label for="searchBar"></label>
-                        <input type="search" placeholder="Cerca prodotti, categorie, brand..." /><button
-                            type="submit">Cerca</button>
+                        <label for="searchInput"></label>
+                        <input id="searchInput" type="search" placeholder="Cerca prodotti, categorie, brand..." />
+                        <button type="submit">Cerca</button>
                     </form>
                 </li>
                 <li>
-                    <a href="javascript:void()" target="_blank">Account</a>
+                    <a href="javascript:void(0)" target="_blank">Account</a>
                 </li>
                 <li>
-                    <a href="javascript:void()" target="_blank">Ordini</a>
+                    <a href="javascript:void(0)" target="_blank">Ordini</a>
                 </li>
                 <li>
                     <button id="carrello">Carrello (0)</button>
@@ -52,39 +53,173 @@
                     <h2>Categorie</h2>
                 </div>
                 <div class="categoryCard">
-                        <h2>Elettronica</h2>
-                        <div class="categoryCardBot">
+                    <h2>Elettronica</h2>
+                    <div class="categoryCardBot">
                         <p>Elettronica</p>
-                        <a href="javascript:void()" target="_blank">Scopri di più</a>
-                        </div>
+                        <a href="javascript:void(0)" target="_blank">Scopri di più</a>
+                    </div>
                 </div>
-                                <div class="categoryCard">
-                        <h2>Libri</h2>
-                        <div class="categoryCardBot">
+                <div class="categoryCard">
+                    <h2>Libri</h2>
+                    <div class="categoryCardBot">
                         <p>Libri</p>
-                        <a href="javascript:void()" target="_blank">Scopri di più</a>
-                        </div>
+                        <a href="javascript:void(0)" target="_blank">Scopri di più</a>
+                    </div>
                 </div>
-                                <div class="categoryCard">
-                        <h2>Abbigliamento</h2>
-                        <div class="categoryCardBot">
+                <div class="categoryCard">
+                    <h2>Abbigliamento</h2>
+                    <div class="categoryCardBot">
                         <p>Abbigliamento</p>
-                        <a href="javascript:void()" target="_blank">Scopri di più</a>
-                        </div>
+                        <a href="javascript:void(0)" target="_blank">Scopri di più</a>
+                    </div>
                 </div>
-                                <div class="categoryCard">
-                        <h2>Casa</h2>
-                        <div class="categoryCardBot">
+                <div class="categoryCard">
+                    <h2>Casa</h2>
+                    <div class="categoryCardBot">
                         <p>Casa</p>
-                        <a href="javascript:void()" target="_blank">Scopri di più</a>
-                        </div>
+                        <a href="javascript:void(0)" target="_blank">Scopri di più</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Ho spostato il div #product DENTRO la section prodotti per logica strutturale -->
         <section class="prodotti">
-            <!-- Griglia prodotti (Versione Base: HTML statico; Intermedia/Avanzata: generata da JS) -->
-        </section>
+            <div id="product">
+                <div id="productTitle">
+                    <h2>I più venduti</h2>
+                </div>
+
+                <!-- Prodotto 1 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 1 -->
+
+                <!-- Prodotto 2 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 2 -->
+
+                <!-- Prodotto 3 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 3 -->
+
+                <!-- Prodotto 4 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 4 -->
+
+                                <!-- Prodotto 5 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 5 -->
+
+                                <!-- Prodotto 6 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 6 -->
+
+                                <!-- Prodotto 7 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 7 -->
+
+                                <!-- Prodotto 8 -->
+                <div class="productCard">
+                    <h2>Prodotto</h2>
+                    <div class="productCardBot">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i> <a>(5,0)</a>
+                        </p>
+                        <button>Aggiungi al carrello</button>
+                    </div>
+                </div> <!-- Chiuso Prodotto 8 -->
+
+            </div> <!-- Chiuso #product -->
+        </section> <!-- Chiuso .prodotti -->
 
     </main>
 

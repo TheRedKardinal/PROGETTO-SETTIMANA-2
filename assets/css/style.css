@@ -184,6 +184,66 @@ main {
     color: lightskyblue;
 }
 
+#product {
+    background-color: rgb(244, 243, 243);
+    margin: 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#productTitle {
+    text-align: left;
+}
+
+.productCard {
+    color: black;
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0.2px 1px 5px 3px lightgray;
+    margin: 5px 10px;
+    background-color: gray;
+}
+
+.productCard h2 {
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.productCardBot {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.productCardBot p,
+.productCardBot button {
+    color: black;
+}
+
+.productCard i {
+    font-size: 0.6rem;
+    color: #FF9900;
+}
+
+.productCardBot button {
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #FEBD69;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.productCardBot a {
+    color: lightskyblue;
+    font-size: 0.7rem;
+}
+
+
 /* Scrivi qui sotto i tuoi stili */
 
 /* HEADER: #131921
