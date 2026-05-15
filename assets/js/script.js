@@ -142,7 +142,7 @@ function piazzaStelline(n) {
     return 'Rating non valido';
 }
 
-console.log(piazzaStelline(6));
+console.log(piazzaStelline(5));
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
